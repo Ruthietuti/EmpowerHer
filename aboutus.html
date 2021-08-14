@@ -1,0 +1,139 @@
+<!
+DOCTYPE html>
+<html>
+<head>
+	<title> Class Project</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="aboutus.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">	
+</head>
+<body>
+	<!-- nAV start -->
+	<div class="nav-fixed">
+		<nav>
+			<a href="about.html"><img src="images/logoo.jpg"></a>
+			<div class="nav-links">
+				<ul>
+					<li> <a href=""> Home</a></li>
+					<li> <a href=""> About</a></li>
+					<li> <a href=""> Course</a></li>
+					<li> <a href=""> Blog</a></li>
+					<li> <a href=""> Contact</a></li>
+				</ul>
+			</div>
+			<div class="mobile-view" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li> <a href="EmpHer.html"> Home</a></li>
+					<li> <a href=" About">About</a></li>
+					<li> <a href=" empcourse.html"> Course</a></li>
+					<li> <a href=""> Blog</a></li>
+					<li> <a href=""> Contact</a></li>
+				</ul>
+					
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	</div>	
+    <!-- nAV end -->
+    
+    <!-- banner start -->
+	<section class="about-header">
+		<div class="text-box about-text"> 
+            <h1> About Us</h1>
+        </div>
+    </section>
+    <!-- banner end -->
+    <!-- description starts-->
+    <section>
+        <div class="row about-row">
+            <div class="description-col">
+                <img src="images/photo0.jpeg">
+            </div>
+            <div class="description-col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eveniet nam distinctio ex autem rerum nobis, qui adipisci cupiditate repudiandae magni deserunt odio voluptatibus facere totam, sequi facilis, reiciendis expedita.
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis veritatis nemo voluptate alias ullam labore in, sit quaerat, cupiditate earum illum aliquid at? Nemo voluptatum beatae corporis, ratione voluptate esse.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum reiciendis laboriosam excepturi maiores quod, quis natus fugiat? Nulla, explicabo quo temporibus rem dolores quis mollitia nam porro natus consequuntur!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eveniet nam distinctio ex autem rerum nobis, qui adipisci cupiditate repudiandae magni deserunt odio voluptatibus facere totam, sequi facilis, reiciendis expedita.
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis veritatis nemo voluptate alias ullam labore in, sit quaerat, cupiditate earum illum aliquid at? Nemo voluptatum beatae corporis, ratione voluptate esse.
+					Lorem ipsum dolor sit amet consectetur adipisicing eli
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- description ends-->
+    <section class= "courses">
+	
+	<section class="team">
+		<div class="goals">
+			<h1> Our Goals</h1>
+			<p>As a foundation for women empowerment, some of our goals include.
+				<ul> 
+					<li> Producing competent women in the field of technology  </li>
+					<li> increasing the number of self sufficient and reliant women in the world.</li>
+					<li> Empowering women of all ages  </li>
+					<li> Upholding the ultimate girl code </li>
+				</ul>
+			</p>
+		</div>
+		<div class="members">
+			<h1> OUR TEAM</h1>
+		</div>
+				<div class="row">
+					<div class="campus-col">
+						<img src="images/liz.jpg">
+					<div class="layer">
+						<h3>Elizabeth Okaome</h3>
+						<p> Founder</p>
+					</div>
+				</div> 
+				<div class="campus-col">
+					<img src="images/liz.jpg">
+					<div class="layer">
+						<h3> Pearl Christian</h3>
+						<p> Web Expert</p>
+					</div>
+				</div>
+				<div class="campus-col">
+					<img src="images/liz.jpg">
+					<div class="layer">
+						<h3> Bassey Bassey</h3>
+						<p> Manager</p>
+					</div>
+				</div>
+				<div class="campus-col">
+					<img src="images/liz.jpg">
+					<div class="layer">
+						<h3> Anita Kim</h3>
+						<p> Digital Marketing expert</p>
+					</div>
+				</div>
+				<div class="campus-col">
+					<img src="images/liz.jpg">
+					<div class="layer">
+						<h3> Esther John</h3>
+						<p> Operations manager</p>
+					</div>
+				</div>
+		</div>	
+	</section>
+
+    <!-- footer start -->
+
+	<script type="text/javascript">
+		var navLinks = document.getElementById("navLinks")
+		function showMenu () {
+			navLinks.style.display = "block";
+		}
+		function hideMenu () {
+			navLinks.style.display = "none";
+		}
+
+		var date = new Date()
+		document.querySelector(".current-date-year").innerHTML = Date.getFullYear();
+	</script>
+</body>
+
+</html>
