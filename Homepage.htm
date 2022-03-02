@@ -1,0 +1,59 @@
+<!
+DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="empher.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">	
+</head>
+<body>
+	<!-- nAV and banner start -->
+	<section class="header">	
+		<nav>
+			<a href="Empher.html"><img src="img/logo.png"></a>
+			<div class="nav-links">
+				<ul>
+					<li> <a href=""> Home</a></li>
+					<li> <a href=""> About</a></li>
+					<li> <a href=""> Course</a></li>
+					<li> <a href=""> Blog</a></li>
+					<li> <a href=""> Contact</a></li>
+				</ul>
+			</div>
+			<div class="mobile-view" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li> <a href=""> Home</a></li>
+					<li> <a href=""> About</a></li>
+					<li> <a href=""> Course</a></li>
+					<li> <a href=""> Blog</a></li>
+					<li> <a href=""> Contact</a></li>
+				</ul>
+					
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<div class="text-box">
+			<h1> World's Biggest University</h1>
+			<p>
+				Making websites is one of the easiest things in the world! You just need to learn HTML, CSS, Javascript and you are good to go.
+			</p>
+			<a href="" class="hero-btn"> Visit Us To Know More</a>
+		</div>
+	</section>
+	<script type="text/javascript">
+		var navLinks = document.getElementById("navLinks")
+		function showMenu () {
+			navLinks.style.display = "block";
+		}
+		function hideMenu () {
+			navLinks.style.display = "none";
+		}
+	</script>
+
+</body>
+
+</html>

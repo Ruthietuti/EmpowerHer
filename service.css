@@ -1,0 +1,146 @@
+@import url(@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+	background-color: pink;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(9,4,44,0.18), rgba(9,9,13,1.9)), url(img/servicehome.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+	position: relative;
+
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-bar ul li {
+	margin: 50px;
+	align-content: right;
+	float: right;
+}
+.nav-bar{
+	flex: 1;
+	text-align: right;
+}
+.nav-bar ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-bar ul li a{
+	text-decoration: none;
+	font-size: 20px;
+}
+.nav-bar ul li::after{
+	content: " ";
+	width: 0px;
+	height:2px;
+	background: #f44336;
+	display: inline-flex;
+	margin: 20px;
+	transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+	width: 100%;
+}
+.text{
+	width: 90%;
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(-50% -50%);
+	text-align: center;
+}
+.text h1 {
+	font-size: 62px;
+}
+.text p{
+	padding: 10px  20px 0px;
+	font-size: 20px;
+	color: #ffffff;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 12px 34px;
+	font-size: 13px;
+	background-color: transparent;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid pink;
+	background-color: pink;
+	transition: 1s;
+
+}
+img{ 
+	display: inline-flex;
+	size: 10px;
+	margin: 15px;
+}
+div img p{
+	display: inline-flex;
+}
+.imgs p{
+	display: inline-flex;
+	size: 10px;
+	margin:50px;
+}
+.column {float: left;
+         width: 27%;
+   		 height: 300px;
+ }
+ .footer{
+ 	background-color: gray;
+ 	background-size: cover;
+ 	background-image: url("img/london.png");
+ }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+	background: #cd486b;
+	color: white;
+}
+.par {
+	font-size: 
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;
+  }
+ h1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}

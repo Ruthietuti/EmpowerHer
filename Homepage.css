@@ -1,0 +1,153 @@
+/* google font */
+@import url(@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+/* nav and banner start */
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/banner2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.nav-links ul li::after{
+	content: " ";
+	width: 0px;
+	height:2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+/*nav and banner ends */
+.text-box{
+	width: 90%;
+	color: white;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color: white;
+}
+.text-box  h1{
+	font-size: 62px;
+	text-transform: capitalize;
+}
+.text-box  p{
+	padding: 10px 0 40px;
+	font-size: 20px;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 12px 34px;
+	font-size: 13px;
+	background-color: transparent;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid red;
+	background-color: red;
+	transition: 1s;
+
+}
+nav .fa{
+	display: none;
+}
+.mobile-view{
+	display: none;
+}
+@media (max-width: 767px) {
+	.nav-links{
+		display: none;
+	}
+	.header{
+		background-image: linear-gradient(rgba(4,9,30,0,7) , rgba(4,9,30,0,7)),
+		url(..img/newyork.png);
+	}
+	nav .fa{
+		display: block;
+		color: #fff;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+.text-box h1{
+	font-size: 20px;
+}
+
+.mobile-view{
+	position: absolute;
+	background: #f44336;
+	height: 100vh;
+	width: 200px;
+	top: 0;
+	right: 0;
+	text-align: left;
+	z-index: 200;
+	display: none;
+}
+
+.mobile-view ul{
+	padding: 30px;
+}
+.mobile-view ul li {
+	list-style: none;
+	display: block;
+
+	padding: 8px 12px;
+	position: relative;
+}
+.mobile-view ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.mobile-view ul li::after{
+	content: " ";
+	width: 0px;
+	height:2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.mobile-view ul li:hover::after{
+	width: 100%;
+}
